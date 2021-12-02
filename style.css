@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700;800;900&display=swap');
+@keyframes clock-rotate {
+  from {
+      transform: rotate(0deg)
+  }
+  to {
+      transform: rotate(360deg)
+  }
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: radial-gradient(circle, rgba(255,255,255,1) 10%, rgba(210,210,210,1) 60%, rgba(177,177,177,1) 100%);
+}
+div.container-clock {
+	width: 600px;
+	height: 600px;
+	position: relative;
+	top: 150px;
+	left: 540px;
+}
+div.container-clock * {
+	position: absolute;
+}
+div.container-clock div.circle-1, div.container-clock div.circle-2, div.container-clock div.circle-3, div.container-clock div.circle-4, div.container-clock div.circle-5, div.container-clock div.circle-5 div.glass-2, div.container-clock div.foot-1, div.container-clock div.foot-2, div.container-clock div.shaddow-1, div.container-clock div.shaddow-2, div.container-clock div.hand-button, div.container-clock div.zont-2-left, div.container-clock div.zont-2-right {
+	border-radius: 50%;
+}
+div.container-clock div.circle-1 {
+	width: 400px;
+	height: 400px;
+	top: 125px;
+	left: 100px;
+	background: linear-gradient(to top, #404042, #bebec0);
+}
+div.container-clock div.circle-2 {
+	width: 384px;
+  height: 384px;
+  top: 133px;
+  left: 108px;
+	background: linear-gradient(to top, #5e5f61, #a8a8a8, #424244, #fff, #a7a7a9, #fefefe);
+}
+div.container-clock div.circle-3 {
+	width: 330px;
+  height: 330px;
+  top: 160px;
+  left: 136px;
+	background: linear-gradient(to top, #aaa, #fefefe);
+}
+div.container-clock div.circle-4 {
+  width: 314px;
+  height: 314px;
+  top: 168px;
+  left: 143px;
+	background: linear-gradient(to top, #4c4c4c, #8e8d8d);
+}
+div.container-clock div.circle-5 {
+	width: 300px;
+  height: 300px;
+  top: 175px;
+  left: 150px;
+	background: radial-gradient(circle, rgba(255,255,255,1) 40%, rgba(177,177,177,1) 100%);
+	overflow: hidden;
+}
+div.container-clock div.circle-5 div.glass-1 {
+	width: 500px;
+	height: 500px;
+	top: 0;
+    left: -100px;
+	background: linear-gradient(to top, #aaaaaa42, #fefefe00);
+	z-index: 1;
+}
+div.container-clock div.circle-5 div.glass-2 {
+	width: 800px;
+	height: 800px;
+	right: -245px;
+  bottom: 145px;
+	background: #ffffff4a;
+	z-index: 1;
+}
+div.container-clock div.foot-1, div.container-clock div.foot-2 {
+	width: 80px;
+	height: 80px;
+	bottom: 75px;
+}
+div.container-clock div.foot-1 {
+	left: 100px;
+	background: radial-gradient(circle at 15px 20px, #fff, #8e8e8e, #424244, #bcbdbf, #fff);
+}
+div.container-clock div.foot-2 {
+	right: 100px;
+	background: radial-gradient(circle at 60px 20px, #fff, #8e8e8e, #424244, #bcbdbf, #fff);
+}
+div.container-clock div.shaddow-1, div.container-clock div.shaddow-2 {
+	width: 150px;
+	height: 35px;
+	bottom: 57px;
+	background: radial-gradient(ellipse, #333, rgba(255,255,255,0), rgba(255,255,255,0));
+}
+div.container-clock div.shaddow-1 {
+	left: 65px;
+}
+div.container-clock div.shaddow-2 {
+	right: 65px;
+}
+div.container-clock div.shaddow-3 {
+	width: 360px;
+  height: 100px;
+  left: 120px;
+  bottom: 30px;
+  background: radial-gradient(ellipse, #1d1d1d, rgba(255,255,255,0), rgba(255,255,255,0));
+}
+div.container-clock div.hour-1, div.container-clock div.hour-2, div.container-clock div.hour-4, div.container-clock div.hour-5, div.container-clock div.hour-7, div.container-clock div.hour-8, div.container-clock div.hour-10, div.container-clock div.hour-11 {
+	width: 25px;
+	height: 5px;
+	background: #adadad;
+	border-radius: 5px;
+}
+div.container-clock div.hour-1 {
+	top: 215px;
+  right: 225px;
+  transform: rotate(-60deg);
+}
+div.container-clock div.hour-2 {
+	top: 260px;
+  right: 185px;
+  transform: rotate(-30deg);
+}
+div.container-clock div.hour-4 {
+	right: 185px;
+  bottom: 210px;
+  transform: rotate(30deg);
+}
+div.container-clock div.hour-5 {
+	right: 225px;
+  bottom: 170px;
+  transform: rotate(60deg);
+}
+div.container-clock div.hour-7 {
+  left: 225px;
+  bottom: 170px;
+  transform: rotate(-60deg);
+}
+div.container-clock div.hour-8 {
+	left: 185px;
+  bottom: 210px;
+  transform: rotate(-30deg);
+}
+div.container-clock div.hour-10 {
+	top: 260px;
+  left: 185px;
+  transform: rotate(30deg);
+}
+div.container-clock div.hour-11 {
+	top: 215px;
+  left: 225px;
+  transform: rotate(60deg);
+}
+ div.container-clock div.hour-3, div.container-clock div.hour-6, div.container-clock div.hour-9, div.container-clock div.hour-12 {
+	width: 55px;
+	height: 55px;
+	color: black;
+	font-size: 60px;
+	font-weight: bold;
+	font-family: "Kanit", sans-serif;
+	letter-spacing: 5px;
+}
+div.container-clock div.hour-3 {
+  top: 280px;
+  right: 145px;
+}
+div.container-clock div.hour-6 {
+	left: 285px;
+  bottom: 150px;
+}
+div.container-clock div.hour-9 {
+	top: 280px;
+  left: 165px;
+}
+div.container-clock div.hour-12 {
+	top: 165px;
+  left: 270px;
+}
+.container-hand-hour,
+.container-hand-minute,
+.container-hand-second {
+	top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+div.container-clock div.hand-hour {
+	width: 10px;
+	height: 70px;
+	top: 265px;
+	left: 290px;
+	background: #8e8e8e;
+	border-radius: 10px;
+	transform-origin: 50% 85%;
+	//animation: clock-rotate 43200s linear infinite;
+}
+div.container-clock div.hand-minute {
+	width: 8px;
+  height: 110px;
+  top: 225px;
+  left: 291px;
+	background: #333;
+	border-radius: 7px;
+	transform-origin: 50% 90%;
+	//animation: clock-rotate 3600s linear infinite;
+}
+div.container-clock div.hand-second {
+	width: 4px;
+	height: 100px;
+	top: 245px;
+	left: 293px;
+	background: #ea3e41;
+	border-radius: 7px;
+	transform-origin: 50% 79.5%;
+	//animation: clock-rotate 60s linear infinite;
+}
+div.container-clock div.hand-button {
+	width: 10px;
+  height: 10px;
+  top: 319px;
+  left: 290px;
+	background: #e8e8e8;
+}
+div.container-clock div.zont-1-left {
+	width: 30px;
+	height: 11px;
+	top: 146px;
+	left: 160px;
+	background: linear-gradient(90deg, #404042 0%, #b1b1b3 100%);
+	transform: rotate(60deg);
+}
+div.container-clock div.zont-2-left {
+	width: 30px;
+	height: 30px;
+	top: 65px;
+  left: 120px;
+	background: linear-gradient(90deg, #e8e8e8 4%, #404042 70%);
+	transform: rotate(60deg);
+}
+div.container-clock div.zont-3-left{
+	width: 170px;
+	height: 70px;
+	top: 75px;
+	left: 65px;
+	font-size: 8px;
+	background:
+		radial-gradient(100% 200% at 50% 100%, rgb(171,171,171) 50%, rgba(171,171,171,0) 56%) 47% 30% / 1.1em 12em,
+    radial-gradient(100% 200% at 50% 100%, rgb(194,194,195) 50%, rgba(194,194,195,0) 50.7%) 40% 47% / 12em 12em,
+    radial-gradient(80% 200% at 50% 100%, rgb(220,220,220) 50%, rgba(220,220,220,0) 50.7%) 50% 55% / 22em 12em,
+    radial-gradient(80% 200% at 50% 100%, rgb(194,194,195) 50%, rgba(194,194,195,1)  50.7%) 50% 0 / 25em 12em;
+	background-repeat: no-repeat;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	transform: rotate(-30deg);
+}
+div.container-clock div.zont-3-left div.zont-3-left-in-gradient {
+	width: 170px;
+	height: 70px;
+	background: linear-gradient(to bottom, #e0e0e270 10%, #b9babc70 20%, #43434542 30%, #0000009e 50%, #80808170 86%, #a9a9a970 100%);
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+}
+div.container-clock div.zont-1-center {
+	width: 14px;
+	height: 45px;
+	top: 80px;
+	left: 290px;
+	background: linear-gradient(to right, #e0e0e2 10%, #b9babc 35%, #474749 60%, #808081 90%);
+}
+div.container-clock div.zont-2-center {
+	width: 70px;
+	height: 28px;
+	top: 52px;
+	left: 262px;
+	background: linear-gradient(to bottom, #e0e0e2 10%, #b9babc 35%, #474749 60%, #808081 90%);
+	border-radius: 30px;
+}
+div.container-clock div.zont-1-right {
+	width: 30px;
+	height: 11px;
+	top: 146px;
+	right: 160px;
+	background: linear-gradient(90deg, #404042 0%, #b1b1b3 100%);
+	transform: rotate(120deg);
+}
+div.container-clock div.zont-2-right {
+	width: 30px;
+	height: 30px;
+	top: 65px;
+  right: 120px;
+	background: linear-gradient(-90deg, #e8e8e8 4%, #404042 70%);
+	transform: rotate(-60deg);
+}
+div.container-clock div.zont-3-right{
+	width: 170px;
+	height: 70px;
+	top: 75px;
+	right: 65px;
+	font-size: 8px;
+	background:
+		radial-gradient(100% 200% at 50% 100%, rgb(171,171,171) 50%, rgba(171,171,171,0) 56%) 53% 30% / 1.1em 12em,
+    radial-gradient(100% 200% at 50% 100%, rgb(194,194,195) 50%, rgba(194,194,195,0) 50.7%) 60% 47% / 12em 12em,
+    radial-gradient(80% 200% at 50% 100%, rgb(220,220,220) 50%, rgba(220,220,220,0) 50.7%) 50% 55% / 22em 12em,
+    radial-gradient(80% 200% at 50% 100%, rgb(194,194,195) 50%, rgba(194,194,195,1)  50.7%) 50% 0 / 25em 12em;
+	background-repeat: no-repeat;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	transform: rotate(30deg);
+}
+div.container-clock div.zont-3-right div.zont-3-right-in-gradient {
+	width: 170px;
+	height: 70px;
+	background: linear-gradient(to bottom, #e0e0e270 10%, #b9babc70 20%,  #43434542 30%, #0000009e 50%, #80808170 86%, #a9a9a970 100%);
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+}
